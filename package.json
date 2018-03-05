@@ -1,0 +1,18 @@
+{
+  "name": "adv-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass -w ./sass/main.scss ./main.css",
+    "dev-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --no-open",
+    "start": "start npm run compile-sass && start npm run dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "node-sass": "^4.7.2"
+  }
+}
